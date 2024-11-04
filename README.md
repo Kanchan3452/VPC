@@ -52,3 +52,41 @@ create route tables ->then add route
 Attach routing tables to subnets. R1-IGW to S3-Public and S4-Public, public network required to have internet access. 
 Attach R2-VGW to S1-Private and S2-Private (No internet become a private subnets)
 
+## create instances
+
+• now we have to create two instnaces    where we have to enable the public     IPv4 .
+
+•then on both instance we have to       downlaod the web server here i have    downlaoded the apache2 server
+
+-- after that i chech that my             instances are working or not .
+
+![Screenshot_2024_1104_182258](https://github.com/user-attachments/assets/c913fb61-bc91-43d2-bd2a-47fdba5e508e)
+
+## now we have to create the load         balancer
+
+--where we have to give vpc, aviablity   zone of the ec2 instance
+
+•then we have to create the target      group where we have to select the two  insatance we have create then we have  to go to helath check edited option    which was present below the load       balancer is create ,then edit it as    given below image
+
+
+![Screenshot_2024_1104_182902](https://github.com/user-attachments/assets/0ae0ab8a-9196-486b-ad41-b9e27c901240)
+
+•after that come to load balancer       where we have to select the target     group which we have created then make  the load balancer , it will look like  the given image below .
+
+![Screenshot_2024_1104_183106](https://github.com/user-attachments/assets/a891ba72-6a20-4f33-89c2-cbe07cd88904)
+
+![Screenshot_2024_1104_183126](https://github.com/user-attachments/assets/1c5a8cf9-ff8d-4565-8968-7d1c0df5920a)
+
+*now put on any one instance write following commands in putty -*
+
+* ```
+  htop
+  ```
+  ```
+  seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
+  ```
+  ```
+  htop
+  ```
+
+  ![Screenshot_2024_1104_183758](https://github.com/user-attachments/assets/bae13bf3-7e99-4944-86fb-156efc303382)
