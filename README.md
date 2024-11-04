@@ -32,3 +32,10 @@ the virtual private gateway, and the VPC.
 create a VPGW-> actions -> attach to VPC
 ![image](https://github.com/user-attachments/assets/3e798236-3618-499c-b48a-386d2ed0cb5f)
 
+## Create route tables and attach to subnets 
+Route Tables. A route table contains a set of rules, called routes that are used to determine where network 
+traffic is directed. Each subnet in your VPC must be associated with a route table; the table controls the routing for the 
+subnet. 
+One route for Internet gateway, another for Virtual private gateway (R1-IGW and R2-VGW) 
+* Route - 0.0.0.0/0 to IGW
+* Route - 192.168.0.0/16 to VGW
