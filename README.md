@@ -1,4 +1,4 @@
-# VPC  (Virtual Private Cloud )
+# VPC
 A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. It is logically isolated from 
 other virtual networks in the AWS Cloud. You can launch your AWS resources, such as Amazon EC2 instances, into your 
 VPC.
@@ -49,5 +49,6 @@ create route tables ->then add route
   
 ![WhatsApp Image 2024-11-05 at 00 01 09_5ad6c39d](https://github.com/user-attachments/assets/2664dd7a-d520-4a9b-8489-20098dde04f0)
 
-
+Attach routing tables to subnets. R1-IGW to S3-Public and S4-Public, public network required to have internet access. 
+Attach R2-VGW to S1-Private and S2-Private (No internet become a private subnets)
 
