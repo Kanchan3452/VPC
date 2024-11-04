@@ -21,9 +21,11 @@ that allows communication between instances in your VPC and the internet. It the
 bandwidth constraints on your network traffic.
 
 create a gateway then attach it to your VPC ,
+
 FOR, attaching your IGW 
 actions->attach to VPC
 ![image](https://github.com/user-attachments/assets/ec4aff80-b48e-4888-8ead-50ed1bbdae7b)
+
 
 ## Create Virtual Private Gateway and Attach to VPC 
 It can be a physical or software appliance. The anchor on the AWS side of the VPN connection is called a virtual 
@@ -39,3 +41,13 @@ subnet.
 One route for Internet gateway, another for Virtual private gateway (R1-IGW and R2-VGW) 
 * Route - 0.0.0.0/0 to IGW
 * Route - 192.168.0.0/16 to VGW
+
+create route tables ->then add route
+
+  ![WhatsApp Image 2024-11-05 at 00 03 21_87b98a1c](https://github.com/user-attachments/assets/87dd1fbc-4684-47e3-9ae0-c3c2d0366890)
+
+  
+![WhatsApp Image 2024-11-05 at 00 01 09_5ad6c39d](https://github.com/user-attachments/assets/2664dd7a-d520-4a9b-8489-20098dde04f0)
+
+
+
